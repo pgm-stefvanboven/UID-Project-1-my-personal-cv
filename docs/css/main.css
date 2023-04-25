@@ -1,0 +1,466 @@
+body {
+    background-color:#48a9a6;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+
+div {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+}
+
+
+
+/*CV-left*/
+.row {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cv-left {
+    margin-top: 6rem;
+}
+
+.contact-me,
+.language,
+.skills {
+    margin-bottom: 2rem;
+}
+
+.profile-picture {
+    width: 35%;
+    border-radius: 50%;
+    margin-top: -3rem;
+}
+
+.contact-me-link {
+    text-decoration: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+    color: black;
+}
+
+.contact-me-link:hover {
+    color: #e4dfda;
+}
+
+.phone-icon,
+.mail-icon,
+.location-dot-icon,
+.football-icon,
+.swimming-icon,
+.gamepad-icon,
+.book-icon {
+    margin-right: 1rem;
+    width: 4%;
+}
+
+.phone,
+.mail,
+.address,
+.football,
+.swimming,
+.game,
+.book {
+    display: flex;
+    margin-top: 1rem;
+}
+
+/* language circles */
+
+.language {
+    display: flex;
+}
+
+.dutch,
+.english,
+.french {
+    margin-left: 1rem;
+}
+
+.language-circle-dutch,
+.language-circle-english,
+.language-circle-french {
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.language-circle-dutch::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(#1b2845 100%, #e4dfda 0); 
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+}
+
+.language-circle-english::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(#1b2845 80%, #e4dfda 0);
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+}
+
+.language-circle-french::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(#1b2845 25%, #e4dfda 0);
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+}
+
+.language-circle-dutch::after {
+    content: "100%";
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+}
+
+.language-circle-english::after {
+    content: "80%";
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+}
+
+.language-circle-french::after {
+    content: "25%";
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+}
+
+.language-text,
+.language-text-two,
+.language-text-three {
+    text-align: center;
+}
+
+.language-text,
+.language-text-two,
+.language-text-three {
+    margin-top: 1rem;
+}
+
+/*skill circles*/
+
+.skills {
+    display: flex;
+}
+
+.skills-row-two {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.figma,
+.ui,
+.web-design,
+.social,
+.creative,
+.team-work {
+    margin-left: 1rem;
+}
+
+.figma,
+.ui,
+.web-design,
+.social,
+.creative,
+.team-work {
+    margin-top: 1rem;
+}
+
+.skills-circle-figma,
+.skills-circle-ui,
+.skills-circle-web-design,
+.skills-circle-social,
+.skills-circle-creative,
+.skills-circle-team-work {
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+
+.skills-circle-figma::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(#1b2845 85%, #e4dfda 0);
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+}
+
+.skills-circle-figma::after {
+    content: "85%";
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+}
+
+.skills-circle-ui::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(#1b2845 80%, #e4dfda 0); 
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+}
+
+.skills-circle-ui::after {
+    content: "80%";
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+}
+
+.skills-circle-web-design::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(#1b2845 75%, #e4dfda 0);
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+}
+
+.skills-circle-web-design::after {
+    content: "75%";
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+}
+
+.skills-circle-social::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(#1b2845 100%, #e4dfda 0); 
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+}
+
+.skills-circle-social::after {
+    content: "100%";
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+}
+
+.skills-circle-creative::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(#1b2845 90%, #e4dfda 0);
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+}
+
+.skills-circle-creative::after {
+    content: "90%";
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+}
+
+.skills-circle-team-work::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(#1b2845 100%, #e4dfda 0); 
+    mask: radial-gradient(white 55%, transparent 0);
+    mask-mode: alpha;
+    -webkit-mask: radial-gradient(#0000 55%, #000 0);
+    -webkit-mask-mode: alpha;
+}
+
+.skills-circle-team-work::after {
+    content: "100%";
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: normal;
+}
+
+.skills-text,
+.skills-text-two,
+.skills-text-three,
+.skills-text-five,
+.skills-text-four {
+    text-align: center;
+}
+
+.skills-text,
+.skills-text-two,
+.skills-text-three,
+.skills-text-five,
+.skills-text-four {
+    margin-top: 1rem;
+}
+
+.intrerests-title {
+    margin-top: 4.4rem;
+}
+
+/*CV-right*/
+
+.cv-right {
+    margin-top: 4.4rem;
+}
+
+.cv-circle {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 21rem;
+}
+
+.circle {
+    padding-top: 0.8rem;
+}
+
+.name-block {
+    margin-bottom: 9rem;
+}
+
+.about-me-title {
+    margin-top: -5rem;
+}
+
+span {
+    font-weight: bolder;
+}
+
+.name-block,
+.about-me,
+.education,
+.experience,
+.references {
+    text-align: center;
+}
+
+.cv-circle,
+.name-block {
+    margin-top: 2rem;
+}
+
+.Edu-title {
+    margin-top: 3rem;
+}
+
+.education-year,
+.education-discription {
+    margin-bottom: 1.1rem;
+}
+
+.experience-title {
+    margin-top: 2rem;
+}
+
+.company-function {
+    text-decoration: underline;
+}
+
+.references-block {
+    background-color:black;
+    color: #48a9a6;
+    box-shadow: 5px 10px ;
+}
+
+.company-logo {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+}
+
+.logo {
+    width: 10rem;
+}
+
+.person-icon {
+    margin-right: 1rem;
+    width: 8%;
+    border: 0.1rem solid #48a9a6;
+    border-radius: 50%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    color: #48a9a6;
+    background-color: #48a9a6;
+}
+
+.person-name,
+.person-job,
+.reference {
+    margin-bottom: 1rem;
+}
+
+.date {
+    display: flex;
+    margin-left: 1rem;
+    color: #48a9a6;
+}
+
+.calendar {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    color: #48a9a6;
+}
