@@ -410,7 +410,8 @@ span {
     margin-bottom: 1.1rem;
 }
 
-.experience-title {
+.experience-title,
+.experience-year {
     margin-top: 2rem;
 }
 
